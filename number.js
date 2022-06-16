@@ -12,6 +12,7 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess == secretNumber) {
     document.querySelector(".message").textContent = "correct number";
     document.querySelector("body").style.backgroundColor = "green";
+    document.querySelector(".number").textContent = secretNumber;
     if (score > highscore) {
       highscore = score;
       document.querySelector(".highscore1").textContent = highscore;
